@@ -13,12 +13,25 @@ window.onload = function() {
 
 // Nav Buttons
 function showSection(element) {
-  // Hide Current Section
-  var currentSection = document.querySelector('.display')
-  currentSection.classList.remove('display')
-  // Show New Section
-  var sectionId = element.textContent.toLowerCase()
-  document.querySelector(`#${sectionId}`).classList.add('display')
+  var id = element.textContent.toLowerCase()
+  // If main: show all
+  if (id === 'main') {
+    // Remove all hidden sections
+    var hiddens = document.querySelectorAll('section.hidden')
+    for (var i = 0; i < hiddens.length; i++) {
+      hiddens[i].classList.remove('hidden')
+    }
+  // If not main: show specific
+  } else {
+    // Remove all sections not specific id
+    var sections = document.querySelectorAll(`section:not(#${id})`)
+    for (i = 0; i < sections.length; i++) {
+      var section = sections[i]
+      section.classList.add('hidden')
+    }
+    // Add hidden to specific id
+    document.querySelector(`section#${id}`).classList.remove('hidden')
+  }
 
   // Grey Current Button 
   var currentButton = document.querySelector('.white-border')
