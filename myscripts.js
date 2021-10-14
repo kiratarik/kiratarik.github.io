@@ -1,6 +1,6 @@
 window.onload = function() {
   // Nav Buttons
-  var navButtons = document.querySelectorAll('nav > div')
+  var navButtons = document.querySelectorAll('nav > div > div')
   for (var i = 0; i < navButtons.length; i++) {
     var button = navButtons[i]
     button.onclick = function() {
