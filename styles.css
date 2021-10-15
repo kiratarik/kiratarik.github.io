@@ -141,8 +141,8 @@ section {
 /* Contacts */
 #contact > div {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
   margin: 10px 0px;
 }
 

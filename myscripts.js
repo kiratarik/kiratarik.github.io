@@ -6,9 +6,7 @@ window.onload = function() {
     button.onclick = function() {
       showSection(this)
     }
-  }
-
-  
+  } 
 }
 
 // Nav Buttons
@@ -38,4 +36,18 @@ function showSection(element) {
   currentButton.classList.remove('white-border')
   // White Clicked Button
   element.classList.add('white-border')
+}
+
+// Form Submitting
+document.querySelector('#gform').addEventListener('submit', submit)
+document.querySelector('#hidden_iframe').addEventListener('load', load)
+var submitted = false
+function submit() {
+  submitted = true
+}
+function load() {
+  if (submitted) {
+    document.querySelector('#gform').classList.add('hidden')
+    document.querySelector('#processed').classList.remove('hidden')
+  }
 }

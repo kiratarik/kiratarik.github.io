@@ -57,35 +57,35 @@
       <h2>Projects:</h2>
       <div>
         <a title="My Github:&#10;Contains my projects including ReadMe's." href="https://github.com/kiratarik">
-          <img alt="My Github" src="./images/GitHub-Mark-120px-plus.png" />
+          <img alt="My Github" src="images/GitHub-Mark-120px-plus.png" />
           <div>
             <p><strong>My Github:</strong></p>
             <p>Contains my projects including ReadMe's.</p>
           </div>
         </a>
         <a title="Tetris:&#10;A recreation of a classic arcade game." href="https://kiratarik.github.io/sei-fifty-seven-project-one">
-          <img alt="Tetris" src="./images/tetris.png" />
+          <img alt="Tetris" src="images/tetris.png" />
           <div>
             <p><strong>Project 1 - Tetris:</strong></p>
             <p>A recreation of a classic arcade game.</p>
           </div>
         </a>
         <a title="Diction-airy:&#10;An online dictionary with several handy features." href="https://sei-kiratarik-project-two.netlify.app">
-          <img alt="Diction-airy" src="./images/dictionary.png" />
+          <img alt="Diction-airy" src="images/dictionary.png" />
           <div>
             <p><strong>Project 2 - Diction-airy:</strong></p>
             <p>An online dictionary with several handy features.</p>
           </div>
         </a>
         <a title="Picturest:&#10;An image uploading website with a mapping function." href="https://sei-kiratarik-project-three.netlify.app">
-          <img alt="Picturest" src="./images/gallery.png" />
+          <img alt="Picturest" src="images/gallery.png" />
           <div>
             <p><strong>Project 3 - Picturest:</strong></p>
             <p>An image uploading website with a mapping function.</p>
           </div>
         </a>
         <a title="Simple-Games:&#10;A compendium of simple games." href="https://sei-project-four.netlify.app">
-          <img alt="Simple-Games" src="./images/game.png" />
+          <img alt="Simple-Games" src="images/game.png" />
           <div>
             <p><strong>Project 4 - Simple-Games:</strong></p>
             <p>A compendium of simple games.</p>
@@ -107,10 +107,19 @@
     <section id="contact">
       <br>
       <h2>Contact:</h2>
+      <!-- https://docs.google.com/forms/d/e/1FAIpQLSeKbh997Sn74CogsxGQ3wKz5t4GZTZF8Q5uIwCPN4Hk6dNPgQ/viewform?usp=pp_url&entry.2005620554=Test&entry.1045781291=Test@email.com&entry.839337160=Test1 -->
       <div>
-        <form>
-          <p>placeholder</p>
+        <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSeKbh997Sn74CogsxGQ3wKz5t4GZTZF8Q5uIwCPN4Hk6dNPgQ/formResponse?" target="hidden_iframe">
+          Enter Name:<br>
+          <input type="text" required name="entry.2005620554" id="entry.2005620554"><br>
+          Enter Email Address:<br>
+          <input type="email" required name="entry.1045781291" id="entry.1045781291"><br>
+          Enter Message:<br>
+          <textarea required name="entry.839337160" id="entry.839337160"></textarea><br>
+          <input type="submit" value="Submit">
         </form>
+        <p class="hidden" id="processed">Your submission has been processed.</p>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
       </div>
     </section>
 
@@ -124,5 +133,5 @@
       </div>
     </footer>
   </body>
-  <script src="myscripts.js"></script> 
+  <script src="myscripts.js"></script>
 </html>
