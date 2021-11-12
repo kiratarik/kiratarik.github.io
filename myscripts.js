@@ -6,6 +6,18 @@ window.onload = function() {
     button.onclick = function() {
       showSection(this)
     }
+  }
+
+  // Mouse On/Off
+  var projects = document.querySelectorAll('#projects > div > a')
+  for (var j = 0; j < projects.length; j++) {
+    var project = projects[j]
+    project.onmouseenter = function() {
+      mouseOn(this)
+    }
+    project.onmouseleave = function() {
+      mouseOff(this)
+    }
   } 
 }
 
@@ -38,8 +50,12 @@ function showSection(element) {
   element.classList.add('white-border')
 }
 
-function mouseOver(e) {
-  console.log('mouse over')
+// Mouse On/Off projects to reveal more details
+function mouseOn(e) {
+  e.classList.add('show')
+}
+function mouseOff(e) {
+  e.classList.remove('show')
 }
 
 // Form Submitting

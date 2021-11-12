@@ -69,10 +69,10 @@ footer > div {
 }
 
 footer > div > a > img {
-  max-width: 50px;
+  /* max-width: 50px; */
   max-height: 50px;
   object-fit: cover;
-  margin: 5px 0px;
+  margin: 5px;
 }
 
 
@@ -121,8 +121,16 @@ section {
   color: black;
 }
 
+/* Mouse on/off */
 #projects > div > a > div > p {
   margin: 0px;
+}
+#projects > div > a > div > article {
+  display: none;
+}
+
+#projects > div > a.show > div > article {
+  display: flex;
 }
 
 .credits {
