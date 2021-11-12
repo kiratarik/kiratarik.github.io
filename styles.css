@@ -121,14 +121,23 @@ section {
   color: black;
 }
 
-/* Mouse on/off */
 #projects > div > a > div > p {
   margin: 0px;
 }
+
 #projects > div > a > div > article {
   display: none;
+  flex-direction: column;
+  margin: 10px 0px;
 }
 
+#projects > div > a > div > article > p {
+  margin: 0px;
+}
+
+#projects > div > a.show > div {
+  max-width: 650px;
+}
 #projects > div > a.show > div > article {
   display: flex;
 }
