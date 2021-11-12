@@ -38,6 +38,10 @@ function showSection(element) {
   element.classList.add('white-border')
 }
 
+function mouseOver(e) {
+  console.log('mouse over')
+}
+
 // Form Submitting
 document.querySelector('#gform').addEventListener('submit', submit)
 document.querySelector('#hidden_iframe').addEventListener('load', load)
