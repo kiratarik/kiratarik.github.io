@@ -77,4 +77,3 @@ function load() {
     document.querySelector('#gform').reset()
   }
 }
-
