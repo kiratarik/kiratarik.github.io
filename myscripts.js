@@ -35,6 +35,7 @@ window.onload = function() {
   }
 }
 
+
 // Nav Buttons
 function showSection(element) {
   var id = element.textContent.toLowerCase()
