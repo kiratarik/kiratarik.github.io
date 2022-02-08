@@ -8,15 +8,20 @@ window.onload = function() {
     }
   }
 
-  // Mouse On/Off
-  var projects = document.querySelectorAll('#projects > div > a')
-  for (var j = 0; j < projects.length; j++) {
+  //  Links
+  var links = document.querySelectorAll('a')
+  for (var j = 0; j < links.length; j++) {
+    var link = links[j]
+    link.target = '_blank'
+    link.rel = 'noopener noreferrer'
+  } 
+
+  // Projects
+  var projects = document.querySelectorAll('#projects > div > div')
+  for (var k = 0; k < projects.length; k++) {
     var project = projects[j]
-    project.onmouseenter = function() {
-      mouseOn(this)
-    }
-    project.onmouseleave = function() {
-      mouseOff(this)
+    project.onclick = function() {
+      click(this)
     }
   } 
 }
@@ -50,13 +55,16 @@ function showSection(element) {
   element.classList.add('white-border')
 }
 
-// Mouse On/Off projects to reveal more details
-function mouseOn(e) {
-  e.classList.add('show')
+// OnClick projects to reveal more details
+function click(e) {
+  e.classList.toggle('show')
 }
-function mouseOff(e) {
-  e.classList.remove('show')
-}
+
+//  Open link in new tab
+// function openInNewTab(url) {
+//   window.open(url, '_blank').focus()
+// }
+
 
 // Form Submitting
 document.querySelector('#gform').addEventListener('submit', submit)
