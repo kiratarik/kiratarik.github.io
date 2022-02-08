@@ -21,14 +21,12 @@ window.onload = function() {
   for (var k = 0; k < projects.length; k++) {
     var project = projects[k]
     project.onclick = function(event) {
-      console.log('project click',event.target.tagName.toLowerCase())
       if (event.target.tagName.toLowerCase() !== 'a') {
         click(this)
       }
     }
   }
 }
-
 
 // Nav Buttons
 function showSection(element) {
