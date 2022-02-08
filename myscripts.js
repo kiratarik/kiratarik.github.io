@@ -66,9 +66,9 @@ function click(e) {
 }
 
 // Form Submitting
+var submitted = false
 document.querySelector('#gform').addEventListener('submit', submit)
 document.querySelector('#hidden_iframe').addEventListener('load', load)
-var submitted = false
 function submit() {
   submitted = true
 }
