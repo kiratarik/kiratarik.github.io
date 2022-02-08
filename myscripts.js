@@ -20,8 +20,10 @@ window.onload = function() {
   var projects = document.querySelectorAll('#projects > div > div')
   for (var k = 0; k < projects.length; k++) {
     var project = projects[k]
-    project.onclick = function() {
-      click(this)
+    project.onclick = function(event) {
+      if (event.target.tagName.toLowerCase() != 'a') {
+        click(this)
+      }
     }
   }
 }
