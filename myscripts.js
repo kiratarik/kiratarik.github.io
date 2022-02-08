@@ -65,7 +65,6 @@ function click(e) {
 //   window.open(url, '_blank').focus()
 // }
 
-
 // Form Submitting
 document.querySelector('#gform').addEventListener('submit', submit)
 document.querySelector('#hidden_iframe').addEventListener('load', load)
