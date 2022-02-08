@@ -79,4 +79,3 @@ function load() {
     document.querySelector('#processed').classList.remove('hidden')
   }
 }
-
