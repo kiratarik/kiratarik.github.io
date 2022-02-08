@@ -32,7 +32,6 @@ window.onload = function() {
   document.querySelector('.submit').value = 'Submit'
 }
 
-
 // Nav Buttons
 function showSection(element) {
   var id = element.textContent.toLowerCase()
