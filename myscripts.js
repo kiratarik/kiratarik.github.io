@@ -68,8 +68,7 @@ document.querySelector('#hidden_iframe').addEventListener('load', load)
 var submitted = false
 function submit() {
   submitted = true
-  var frm = document.querySelector('#gform')
-  frm.reset()
+  document.querySelector('#gform').reset()
 }
 
 function load() {
