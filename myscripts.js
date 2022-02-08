@@ -23,7 +23,7 @@ window.onload = function() {
     project.onclick = function() {
       click(this)
     }
-  } 
+  }
 }
 
 // Nav Buttons
