@@ -31,6 +31,7 @@ window.onload = function() {
   document.querySelector('#gform').reset()
 }
 
+
 // Nav Buttons
 function showSection(element) {
   var id = element.textContent.toLowerCase()
