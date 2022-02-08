@@ -68,13 +68,13 @@ document.querySelector('#hidden_iframe').addEventListener('load', load)
 var submitted = false
 function submit() {
   submitted = true
-  document.querySelector('#gform').reset()
 }
 
 function load() {
   if (submitted) {
     document.querySelector('#gform').classList.add('hidden')
     document.querySelector('#processed').classList.remove('hidden')
+    document.querySelector('#gform').reset()
   }
 }
 
