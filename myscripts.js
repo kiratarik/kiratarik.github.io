@@ -28,13 +28,8 @@ window.onload = function() {
   }
 
   // Form reset
-  var inputs = document.querySelector('#gform').childNodes
-  for (var l = 0; l < inputs.length; l++) {
-    var input = inputs[l]
-    input.value = ''
-  }
+  document.querySelector('#gform').reset()
 }
-
 
 // Nav Buttons
 function showSection(element) {
