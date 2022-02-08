@@ -100,20 +100,20 @@ section {
   margin: 10px 0px;
 }
 
-#projects > div > a {
+#projects > div > div {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
 
-#projects > div > a > img {
+#projects > div > div > img {
   max-width: 100px;
   max-height: 100px;
   object-fit: cover;
   margin: 5px 0px;
 }
 
-#projects > div > a > div {
+#projects > div > div > div {
   max-width: 250px;
   /* max-height: 100px; */
   padding: 10px;
@@ -121,24 +121,24 @@ section {
   color: black;
 }
 
-#projects > div > a > div > p {
+#projects > div > div > div > p {
   margin: 0px;
 }
 
-#projects > div > a > div > article {
+#projects > div > div > div > article {
   display: none;
   flex-direction: column;
   margin: 10px 0px;
 }
 
-#projects > div > a > div > article > p {
+#projects > div > div > div > article > p {
   margin: 0px;
 }
 
-#projects > div > a.show > div {
+#projects > div > div.show > div {
   max-width: 650px;
 }
-#projects > div > a.show > div > article {
+#projects > div > div.show > div > article {
   display: flex;
 }
 
