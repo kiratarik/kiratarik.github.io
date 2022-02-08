@@ -26,6 +26,9 @@ window.onload = function() {
       }
     }
   }
+
+  // Form reset
+  document.querySelector('#gform').reset()
 }
 
 // Nav Buttons
@@ -74,6 +77,5 @@ function load() {
   if (submitted) {
     document.querySelector('#gform').classList.add('hidden')
     document.querySelector('#processed').classList.remove('hidden')
-    document.querySelector('#gform').reset()
   }
 }
