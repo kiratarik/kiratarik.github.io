@@ -29,6 +29,7 @@ window.onload = function() {
 
   // Form reset
   document.querySelector('#gform').reset()
+  document.querySelector('.submit').value = 'Submit'
 }
 
 
